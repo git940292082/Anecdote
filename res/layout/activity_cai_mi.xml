@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CaiMiActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rl_riddle_top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/checked"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tv_riddle_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="谜语大全"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_riddle_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_back" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_riddle_top"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_riddle_random"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1"
+            android:background="@drawable/ic_caimi" >
+
+            <TextView
+                android:id="@+id/tv_riddle_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="脑筋急转弯" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/bt_riddle_answer"
+                android:layout_below="@+id/bt_riddle_next"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/tv_riddle_random_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="一人领先，三人居中，七人随后;" />
+            </ScrollView>
+
+            <Button
+                android:id="@+id/bt_riddle_answer"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/ic_y"
+                android:text="查看"
+                android:textColor="@color/checked" />
+
+            <TextView
+                android:id="@+id/tv_riddle_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/bt_riddle_answer"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/bt_riddle_answer"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="80dp"
+                android:layout_toRightOf="@+id/bt_riddle_answer"
+                android:background="#33ffff00"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="谜底"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/bt_riddle_next"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/ic_y"
+                android:text="下一题"
+                android:textColor="@color/checked"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <GridView
+            android:id="@+id/gv_riddle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.89"
+            android:numColumns="2" >
+        </GridView>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PocketMainActivity" >
+
+    <LinearLayout
+        android:id="@+id/ll_fragment_page"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/biankuang"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_main_xiaohua"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/selector_xiaohua"
+            android:enabled="false"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="爆笑地带"
+            android:textColor="@color/selector_bt_book_color"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_main_guigushi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/selector_guigushi"
+            android:enabled="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="鬼故事"
+            android:textColor="@color/selector_bt_book_color"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_main_discover"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/selector_discover"
+            android:enabled="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="发现"
+            android:textColor="@color/selector_bt_book_color"
+            android:textSize="12sp" />
+        <Button
+            android:id="@+id/btn_main_my"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/selector_my"
+            android:enabled="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="我的"
+            android:textColor="@color/selector_bt_book_color"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

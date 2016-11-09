@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogoActivity" >
+ <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" 
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:id="@+id/logo_ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:orientation="horizontal" 
+        android:gravity="center"
+        android:layout_below="@+id/view">
+
+        <TextView
+            android:id="@+id/logo_tv_kou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="口"
+            android:textColor="@color/checked"
+            android:padding="5dp"
+            android:textSize="32sp" />
+        <TextView
+            android:id="@+id/logo_tv_dai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="袋"
+            android:textColor="@color/checked"
+            android:padding="5dp"
+            android:textSize="32sp" />
+        <TextView
+            android:id="@+id/logo_tv_yue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="逸"
+            android:textColor="@color/checked"
+            android:padding="5dp"
+            android:textSize="32sp" />
+        <TextView
+            android:id="@+id/logo_tv_du"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="趣"
+            android:textColor="@color/checked"
+            android:padding="5dp"
+            android:textSize="32sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/logo_iv_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:layout_above="@+id/view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ic_logo" />
+
+    <TextView
+        android:id="@+id/logo_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="11dp"
+        android:text="版权所有  @Ark"
+        android:textColor="#888888"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/logo_tvm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/logo_ll_title"
+        android:layout_marginTop="10dp"
+        android:text="笑是一种没有副作用的镇静剂。——格拉索"
+        android:gravity="center"
+        android:textColor="#888888"
+        android:textSize="12sp" />
+
+
+</RelativeLayout>

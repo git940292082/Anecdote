@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ark.pocket.read.activity.DongTuWebActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rl_dongtu_web_top"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/checked"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="搞笑动图"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_dongtu_web_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_dongtu_web_top"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:text="我要找个能爱我爱到最"
+        android:textColor="#555555"
+        android:textSize="18sp" />
+
+    <WebView
+        android:id="@+id/wv_dongtu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

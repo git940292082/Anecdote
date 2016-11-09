@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_xiaohua_top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/checked"
+        android:gravity="center_vertical" >
+
+        <RadioGroup
+            android:id="@+id/rg_xiaohua"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_xiaohua_wenben"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="开心一笑"
+                android:textColor="@color/selector_rg_text_color" />
+
+            <RadioButton
+                android:id="@+id/rb_xiaohua_tupian"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="趣味图片"
+                android:textColor="@color/selector_rg_text_color" />
+
+            <RadioButton
+                android:id="@+id/rb_xiaohua_dongtu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="搞笑动图"
+                android:textColor="@color/selector_rg_text_color" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_xiaohua"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_xiaohua_top" >
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

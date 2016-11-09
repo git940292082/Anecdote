@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:layout_margin="8dp"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/iv_guigs_item"
+        android:layout_width="0dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="5dp"
+        android:padding="2dp" >
+
+        <ImageView
+            android:id="@+id/wv_guigs_item_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_guigushi"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tv_guigs_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="校园鬼故事都是萨斯"
+            android:textColor="@color/checked"
+            android:textSize="14sp"
+            android:textStyle="italic|bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/iv_guigs_item_content"
+        android:layout_width="0dp"
+        android:layout_height="110dp"
+        android:layout_weight="3"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/tv_guigs_item_source"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            android:paddingTop="2dp"
+            android:text="网易娱乐"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

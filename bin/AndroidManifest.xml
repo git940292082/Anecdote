@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ark.pocket.read"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+     <!-- SDK2.1新增获取用户位置信息 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <application
+        android:name="com.ark.pocket.read.app.PocketApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logo"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        <activity
+            android:name="com.ark.pocket.read.activity.LogoActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ark.pocket.read.activity.PocketMainActivity"
+            android:label="@string/title_activity_pocket"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.ark.pocket.read.activity.DongTuWebActivity"
+            android:label="@string/title_activity_dong_tu_web"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.ark.pocket.read.activity.GuiGuShiWebActivity"
+            android:label="@string/title_activity_gui_gu_shi_web"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="sf.hmg.turntest.turntest"
+            android:label="@string/title_activity_gui_gu_shi_web"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.ark.pocket.read.activity.TupianActivity"
+            android:label="@string/title_activity_tupian"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.ark.pocket.read.activity.CaiMiActivity"
+            android:label="@string/title_activity_cai_mi"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.ark.pocket.read.activity.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.ark.pocket.read.activity.RegisterActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <!-- QQ --> 
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".ReturnActivity"
+             >
+        </activity>
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent222222" />
+ 				<!-- 100380359 100381104 222222 -->
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_my_top"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/checked" >
+
+        <ImageView
+            android:id="@+id/iv_my_icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_toux" />
+
+        <TextView
+            android:id="@+id/tv_my_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_my_icon"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Ark丶"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_my_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_my_top"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_my_collect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp" >
+
+            <ImageView
+                android:id="@+id/iv_my_collect"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_shouchang" />
+
+            <TextView
+                android:id="@+id/tv_my_collect"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@+id/iv_my_collect"
+                android:gravity="center|left"
+                android:paddingLeft="20dp"
+                android:text="收藏夹"
+                android:textColor="@color/checked"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/iv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_my_collect"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/iv_my_collect"
+                android:paddingLeft="20dp"
+                android:src="@drawable/address_divider" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_my_set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <ImageView
+                android:id="@+id/iv_my_set"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_shez" />
+
+            <TextView
+                android:id="@+id/tv_my_set"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@+id/iv_my_set"
+                android:gravity="center|left"
+                android:paddingLeft="20dp"
+                android:text="设置"
+                android:textColor="@color/checked"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/iv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_my_set"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/iv_my_set"
+                android:paddingLeft="20dp"
+                android:src="@drawable/address_divider" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_my_exit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <ImageView
+                android:id="@+id/iv_my_exit"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_tuichu" />
+
+            <TextView
+                android:id="@+id/tv_my_exit"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@+id/iv_my_exit"
+                android:gravity="center|left"
+                android:paddingLeft="20dp"
+                android:text="退出"
+                android:textColor="@color/checked"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/iv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_my_exit"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/iv_my_exit"
+                android:paddingLeft="20dp"
+                android:src="@drawable/address_divider" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

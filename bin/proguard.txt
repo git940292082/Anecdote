@@ -1,0 +1,47 @@
+# view res/layout/fragment_guigushi.xml #generated:124
+# view res/layout/fragment_xiaohua.xml #generated:54
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view AndroidManifest.xml #generated:87
+-keep class com.ark.pocket.read.ReturnActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:65
+-keep class com.ark.pocket.read.activity.CaiMiActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:45
+-keep class com.ark.pocket.read.activity.DongTuWebActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:50
+-keep class com.ark.pocket.read.activity.GuiGuShiWebActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:70
+-keep class com.ark.pocket.read.activity.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:30
+-keep class com.ark.pocket.read.activity.LogoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:40
+-keep class com.ark.pocket.read.activity.PocketMainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:75
+-keep class com.ark.pocket.read.activity.RegisterActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:60
+-keep class com.ark.pocket.read.activity.TupianActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:24
+-keep class com.ark.pocket.read.app.PocketApp { <init>(...); }
+
+# view res/layout/fragment_guigushi_list.xml #generated:6
+# view res/layout/fragment_xiaohua_list.xml #generated:6
+-keep class com.ark.pocket.read.view.RefreshableView { <init>(...); }
+
+# view AndroidManifest.xml #generated:82
+-keep class com.tencent.connect.common.AssistActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:91
+-keep class com.tencent.tauth.AuthActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:55
+-keep class sf.hmg.turntest.turntest { <init>(...); }
+
